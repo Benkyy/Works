@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    setlocale(0, "");
+
+
+    cout << "[-] Прогноз погоды" << endl << endl;
+    cout << "[1] Лето" << endl;
+    cout << "[2] Осень" << endl;
+    cout << "[3] Зима" << endl;
+    cout << "[4] Весна" << endl;
+    cout << "[-] Введите значение:";
+
+    short weather;
+    cin >> weather;
+
+    if (weather == 1) {
+        cout << "Сейчас лето, идите гулять!";
+
+    }
+    else if (weather == 2) {
+        cout << "Сейчас осень, оденьтесь потеплее и возьмите зонтик!";
+    }
+    else if (weather == 3) {
+        cout << "Сейчас зима, оденьтесь тепло, возьмите шапку и перчатки!";
+    }
+    else if (weather == 4) {
+        cout << "Сейчас весна, оденьтесь легко и идите на прогулку!";
+    }
+    return (0);
+}

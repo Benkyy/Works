@@ -1,0 +1,56 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+	setlocale(0, "");
+
+	cout << "Калькулятор\n\n";
+	cout << "[+] Сложение\n";
+	cout << "[-] Вычитание\n";
+	cout << "[*] Умножение\n";
+	cout << "[/] Деление\n";
+	cout << "[1] Корень из числа\n";
+	cout << "[2] Возведение первого числа в степень второго\n";
+	cout << "[3] Вычисление кубического корня\n";
+	cout << "[!] Введите операцию\n";
+
+	char operation;
+	cin >> operation;
+
+	cout << "Введите первое число\n";
+	float number1;
+	cin >> number1;
+
+	cout << "Введите второе число\n";
+	float number2;
+	cin >> number2;
+
+	if (operation == '+') {
+		cout << "[+] Результат: " << number1 << " + " << number2 << " = " << number1 + number2;
+	}
+	else if (operation == '-') {
+		cout << "[-] Результат: " << number1 << " - " << number2 << " = " << number1 - number2;
+	}
+	else if (operation == '*') {
+		cout << "[*] Результат: " << number1 << " * " << number2 << " = " << number1 * number2;
+	}
+	else if (operation == '/') {
+		if (number2 == 0) {
+			cout << "На ноль делить нельзя!";
+		}
+		else {
+			cout << "[/] Результат: " << number1 << " / " << number2 << " = " << number1 / number2;
+		}
+	}
+	else if (operation == '1') {
+		cout << "[1] Результат: " << number1 << " = " << sqrt(number1);
+	}
+	else if (operation == '2') {
+		cout << "[2] Результат: " << number1 << " в степени " << number2 << " = " << pow(number1, number2);
+	}
+	else if (operation == '3') {
+		cout << "[3] Результат: " << number1 << " = " << cbrt(number1);
+	}
+	return 0;
+}

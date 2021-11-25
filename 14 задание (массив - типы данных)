@@ -1,0 +1,73 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n[10] = { 1,2,3,4,5,6,7,8,9,10 };
+    short s[10] = { 20,30,40,50,60,70,80,90,100,110 };
+    long l[10] = { 10,1,9,2,8,3,7,4,6,5 };
+    char c[10] = { 'i', 'A', 'M', 'B', 'I', 'G', 'D', 'A', 'N', 'B' };
+    bool b[10] = { true,false,1,111,150,151,200,255,false,true };
+    double d[10] = { 1.11,2.11,3.11,4.11,5.11,6.11,7.11,8.11,9.11,10.11 };
+    float f[10] = { 1.111,2.111,3.111,4.111,5.111,6.111,7.111,8.111,9.111,10.111 };
+    string str[10] = { "aaaa", "bbbbb", "opa", "tutu", "bebe", "lol", "mama mia", "privet", "oups", "Benkyy" };
+
+    cout << "Int" << endl;
+    for (int i = 0; i < 10; i++)
+    {
+        cout << "[" << i + 1 << "] - " << n[i] << endl;
+    }
+    cout << endl;
+
+    cout << "Short" << endl;
+    for (int i = 0; i < 10; i++)
+    {
+        cout << "[" << i + 1 << "] - " << s[i] << endl;
+    }
+    cout << endl;
+
+    cout << "Long" << endl;
+    for (int i = 0; i < 10; i++)
+    {
+        cout << "[" << i + 1 << "] - " << l[i] << endl;
+    }
+    cout << endl;
+
+    cout << "Char" << endl;
+    for (int i = 0; i < 10; i++)
+    {
+        cout << "[" << i + 1 << "] - " << c[i] << endl;
+    }
+    cout << endl;
+
+    cout << "Bool" << endl;
+    for (int i = 0; i < 10; i++)
+    {
+        cout << "[" << i + 1 << "] - " << b[i] << endl;
+    }
+    cout << endl;
+
+    cout << "Double" << endl;
+    for (int i = 0; i < 10; i++)
+    {
+        cout << "[" << i + 1 << "] - " << d[i] << endl;
+    }
+    cout << endl;
+
+    cout << "Float" << endl;
+    for (int i = 0; i < 10; i++)
+    {
+        cout << "[" << i + 1 << "] - " << f[i] << endl;
+    }
+    cout << endl;
+
+    cout << "String" << endl;
+    for (int i = 0; i < 10; i++)
+    {
+        cout << "[" << i + 1 << "] - " << str[i] << endl;
+    }
+    cout << endl;
+
+    system("pause");
+    return 777;
+}

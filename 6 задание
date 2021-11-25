@@ -1,0 +1,170 @@
+
+
+#include <iostream>
+#include <string>
+#include <Windows.h>
+using namespace std;
+        
+
+void mainMenu()   {
+
+        cout << "[+] Календарь\n\n";
+
+        cout << "[1] Январь\n";
+        cout << "[2] Февраль\n";
+        cout << "[3] Март\n";
+        cout << "[4] Апрель\n";
+        cout << "[5] Май\n";
+        cout << "[6] Июнь\n";
+        cout << "[7] Июль\n";
+        cout << "[8] Август\n";
+        cout << "[9] Сентябрь\n";
+        cout << "[10] Октябрь\n";
+        cout << "[11] Ноябрь\n";
+        cout << "[12] Декабрь\n";
+
+        cout << "[+]Выберите месяц: ";
+        }
+int main()
+{    
+        setlocale(0, "");
+
+        mainMenu();
+        short month;
+        short number;
+        cin >> month;
+
+        switch (month)
+        {
+        case 1:
+            cout << "Введите число месяца: \n";
+            cin >> number;
+            if (number <= 31 and number > 0  ) {
+                cout << "Календарь: " << number << " января";
+            }
+            else {
+                cout << "Error";
+            }
+            break;
+        
+        case 2:
+            cout << "Введите число месяца: \n";
+            cin >> number;
+            if (number <= 28 and number > 0) {
+                cout << "Календарь: " << number << " февраля";
+            }
+            else {
+                cout << "Error";
+            }
+            break;
+        case 3:
+            cout << "Введите число месяца: \n";
+            cin >> number;
+            if (number <= 31 and number > 0) {
+                cout << "Календарь: " << number << " марта";
+            }
+            else {
+                cout << "Error";
+            }
+            break;
+        case 4:
+            cout << "Введите число месяца: \n";
+            cin >> number;
+            if (number <= 30 and number > 0) {
+                cout << "Календарь: " << number << " апреля";
+            }
+            else {
+                cout << "Error";
+            }
+            break;
+        case 5:
+            cout << "Введите число месяца: \n";
+            cin >> number;
+            if (number <= 31 and number > 0) {
+                cout << "Календарь: " << number << " мая";
+            }
+            else {
+                cout << "Error";
+            }
+            break;
+        case 6:
+            cout << "Введите число месяца: \n";
+            cin >> number;
+            if (number <= 30 and number > 0) {
+                cout << "Календарь: " << number << " июня";
+            }
+            else {
+                cout << "Error";
+            }
+            break;
+        case 7:
+            cout << "Введите число месяца: \n";
+            cin >> number;
+            if (number <= 31 and number > 0) {
+                cout << "Календарь: " << number << " июля";
+            }
+            else {
+                cout << "Error";
+            }
+            break;
+        case 8:
+            cout << "Введите число месяца: \n";
+            cin >> number;
+            if (number <= 31 and number > 0) {
+                cout << "Календарь: " << number << " августа";
+            }
+            else {
+                cout << "Error";
+            }
+            break;
+        case 9:
+            cout << "Введите число месяца: \n";
+            cin >> number;
+            if (number <= 30 and number > 0) {
+                cout << "Календарь: " << number << " сентября";
+            }
+            else {
+                cout << "Error";
+            }
+            break;
+        case 10:
+            cout << "Введите число месяца: \n";
+            cin >> number;
+            if (number <= 31 and number > 0) {
+                cout << "Календарь: " << number << " октября";
+            }
+            else {
+                cout << "Error";
+            }
+            break;
+        case 11:
+            cout << "Введите число месяца: \n";
+            cin >> number;
+            if (number <= 30 and number > 0) {
+                cout << "Календарь: " << number << " ноября";
+            }
+            else {
+                cout << "Error";
+            }
+            break;
+        case 12:
+            cout << "Введите число месяца: \n";
+            cin >> number;
+            if (number <= 31 and number > 0) {
+                cout << "Календарь: " << number << " декабря";
+            }
+            else {
+                cout << "Error";
+            }
+            break;
+        default:
+            system("cls");
+            cout << "Такого месяца нет в списке, пожалуйста введите другое число\n";
+            system("pause(300)");
+            system("cls");
+            main();
+            break;
+        }
+        return 0;
+}
+

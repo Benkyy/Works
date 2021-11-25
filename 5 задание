@@ -1,0 +1,170 @@
+#include <iostream> 
+#include <string>
+
+using namespace std;
+int main()
+{
+    setlocale(0, "");
+
+    cout << "[+] Переводчик\n";
+    cout << "[1] Русские слова\n";
+    cout << "[2] Английские слова\n";
+    cout << "[3] Выйти\n";
+    short number;
+    cout << "Выбирете пункт из меню: ";
+    cin >> number;
+
+    switch (number)
+    {
+    case 1:
+        cout << "[+] Переводчик (Список русских слов)\n";
+        cout << "[1] Дом\n";
+        cout << "[2] Дорога\n";
+        cout << "[3] Папа\n";
+        cout << "[4] Мама\n";
+        cout << "[5] Спорт\n";
+        cout << "[6] Мяч\n";
+        cout << "[7] Глаза\n";
+        cout << "[8] Небо\n";
+        cout << "[9] Тренажерный зал\n";
+        cout << "[10] Трава\n";
+        cout << "[11] Солнце\n";
+        cout << "[12] Отпуск\n";
+        cout << "[13] Брат\n";
+        cout << "[14] Город\n";
+        cout << "[15] Вода\n";
+        cout << "Выбирете номер слова, которое хотите перевести: ";
+        cin >> number;
+
+        switch (number)
+        {
+        case 1:
+            cout << "House";
+            break;
+        case 2:
+            cout << "Road";
+            break;
+        case 3:
+            cout << "Father";
+            break;
+        case 4:
+            cout << "Mother";
+            break;
+        case 5:
+            cout << "Sport";
+            break;
+        case 6:
+            cout << "Ball";
+            break;
+        case 7:
+            cout << "Eyes";
+            break;
+        case 8:
+            cout << "Sky";
+            break;
+        case 9:
+            cout << "Gym";
+            break;
+        case 10:
+            cout << "Grass";
+            break;
+        case 11:
+            cout << "Sun";
+            break;
+        case 12:
+            cout << "Vacation";
+            break;
+        case 13:
+            cout << "Brother";
+            break;
+        case 14:
+            cout << "City";
+            break;
+        case 15:
+            cout << "Water";
+            break;
+        default:
+            cout << "Error";
+            break;
+        }
+        break;
+    case 2:
+        cout << "[+] Переводчик (Список английских слов)\n";
+        cout << "[1] House\n";
+        cout << "[2] Road\n";
+        cout << "[3] Father\n";
+        cout << "[4] Mother\n";
+        cout << "[5] Sport\n";
+        cout << "[6] Ball\n";
+        cout << "[7] Eyes\n";
+        cout << "[8] Sky\n";
+        cout << "[9] Gym\n";
+        cout << "[10] Grass\n";
+        cout << "[11] Sun\n";
+        cout << "[12] Vacation\n";
+        cout << "[13] Brother\n";
+        cout << "[14] City\n";
+        cout << "[15] Water\n";
+        cout << "Выбирете номер слова, которое хотите перевести: ";
+        cin >> number;
+        switch (number)
+        {
+        case 1:
+            cout << "Дом";
+            break;
+        case 2:
+            cout << "Дорога";
+            break;
+        case 3:
+            cout << "Папа";
+            break;
+        case 4:
+            cout << "Мама";
+            break;
+        case 5:
+            cout << "Спорт";
+            break;
+        case 6:
+            cout << "Мяч";
+            break;
+        case 7:
+            cout << "Глаза";
+            break;
+        case 8:
+            cout << "Небо";
+            break;
+        case 9:
+            cout << "Тренажерный зал";
+            break;
+        case 10:
+            cout << "Трава";
+            break;
+        case 11:
+            cout << "Солнце";
+            break;
+        case 12:
+            cout << "Отпуск";
+            break;
+        case 13:
+            cout << "Брат";
+            break;
+        case 14:
+            cout << "Город";
+            break;
+        case 15:
+            cout << "Вода";
+            break;
+        default:
+            cout << "error";
+            break;
+        }
+        break;
+    case 3:
+        cout << "Вы вышли из системы, всего хорошего!";
+        break;
+    default:
+        break;
+
+    }
+    return 0;
+}

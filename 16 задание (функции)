@@ -1,0 +1,119 @@
+
+#include <iostream>
+using namespace std;
+
+int SizeInt() {
+	return sizeof(int);
+}
+int SizeChar() {
+	return sizeof(char);
+}
+int SizeDouble() {
+	return sizeof(double);
+}
+int SizeBool() {
+	return sizeof(bool);
+}
+int SizeFloat() {
+	return sizeof(float);
+}
+void Background() {
+	system("color F0");
+}
+void Font() {
+	system("color 03");
+}
+
+
+int main()
+{
+	setlocale(0, "");
+
+	int menu;
+	cout << "Пользовательное меню" << endl << endl;
+	cout << "[1] Изменение цвета фона консоли" << endl;
+	cout << "[2] Изменение цвета текста консоли" << endl;
+	cout << "[3] Очищение консоли" << endl;
+	cout << "[4] Вывод размера типа данных INT" << endl;
+	cout << "[5] Вывод размера типа данных CHAR" << endl;
+	cout << "[6] Вывод размера типа данных DOUBLE" << endl;
+	cout << "[7] Вывод размера типа данных FLOAT" << endl;
+	cout << "[8] Вывод размера типа данных BOOL" << endl;
+	cout << "[9] Вывод сообщения “Привет я функция”" << endl;
+	cout << "[10] Вывод квадрата 5x5" << endl;
+	cout << "[+] Выберите номер желаемого действия, сэр: " << endl;
+	cin >> menu;
+
+	switch (menu) {
+	case 1:
+
+		Background();
+		main();
+
+		break;
+	case 2:
+
+		Font();
+		main();
+		break;
+	case 3:
+
+		system("cls");
+		system("pause");
+		main();
+		break;
+	case 4:
+		cout << "[4] Размер типа INT: " << SizeInt() << endl;
+
+		break;
+	case 5:
+		cout << "[4] Размер типа CHAR: " << SizeChar() << endl;
+		break;
+	case 6:
+		cout << "[4] Размер типа DOUBLE: " <<SizeDouble() << endl;
+
+		break;
+	case 7:
+		cout << "[4] Размер типа FLOAT: " << SizeFloat() << endl;
+
+		break;
+	case 8:
+		cout << "[4] Размер типа BOOL: " << SizeBool() << endl;
+
+		break;
+	case 9:
+		cout << "Привет, я - Функция!" << endl;
+
+		break;
+	case 10:
+		system("cls");
+		cout << "[+] Квадрат" << endl << endl;
+
+		cout << "[*] Размер: ";
+		int size;
+		cin >> size;
+		cout << "[+] Текстура: ";
+		char texture;
+		cin >> texture;
+		for (int i = 0; i < size; i++) {
+			for (int j = 0; j < size; j++) {
+				cout << texture << " ";
+			}
+			cout << "\n";
+		}
+
+		break;
+	default:
+		cout << "Такого номера нет, сэр!";
+
+
+
+
+	}
+
+
+
+	int _; cin >> _;
+	return 0;
+
+}
